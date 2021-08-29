@@ -13,10 +13,17 @@ import { HomeComponent } from './home/home.component';
 import { BookComponent } from './book/book.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
 
 const routes : Routes = [
   {path: 'my-slots', component: BookedSlotComponent},
-  {path: 'book', component: BookComponent}
+  {path: 'book', component: BookComponent},
+  {path:'home',component:HomeComponent},
+  { path: '', pathMatch: "full", redirectTo: 'login' },
+  { path: 'login', component: LoginComponent },
+  
+  
 ]
 
 @NgModule({
@@ -30,6 +37,8 @@ const routes : Routes = [
     NavbarComponent,
     HomeComponent,
     BookComponent,
+    FooterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

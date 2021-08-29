@@ -1,0 +1,19 @@
+<div class="center">
+  <div *ngIf="loginErrorMessage" >
+    <div>{{loginErrorMessage}}</div>
+</div>
+  <form (submit)="handleSubmit($event)" [formGroup]="loginForm">
+    <div class="inputbox">
+      <label>Email</label>
+      <input type="text" formControlName="username"/>
+    </div>
+    <div class="inputbox">
+      <label>Password</label>
+      <input type="password" formControlName="password" />
+    </div>
+    <div class="inputbox">
+      <button type="submit">Login</button>
+    </div>
+    <div>Don't have an account? <a href="signup">Sign Up</a></div>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+.copy-right {
+    background-color: black;
+    padding: 3px 0px;
+    margin-top: 17px !important;
+}
+.myContainer {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.copy-right p {
+    margin-bottom: 0px;
+    margin-top: 1px;
+    padding: 7px;
+}
+.carousel-inner img {
+    margin-top: 15px !important;
+}
+
+.copy-right {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
